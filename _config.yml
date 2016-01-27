@@ -6,16 +6,38 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: 赵云鹏的博客
+SEOTitle: 赵云鹏的博客 | Zyp Blog
+email: 807536782@qq.com
+description: "Cool blog"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://silverbulletzyp.github.io." # the base hostname & protocol for your site
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     夜无眠yszd
+zhihu_username:     夜无眠
+github_username:    SilverBulletZyp
+twitter_username:   SilverBulletZyp
+facebook_username:  赵云鹏
 
 # Build settings
+paginate: 10 
+
+# Markdown settings
 markdown: kramdown
+kramdown:
+  input: GFM    
+  
+  
+  
+# Sidebar settings
+sidebar: true  #添加侧边栏
+sidebar-about-description: "简单的描述一下你自己"
+sidebar-avatar: /img/avatar-hux.jpg     #你的大头贴，请使用绝对地址.
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
