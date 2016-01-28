@@ -1,9 +1,9 @@
 {
-    "name": "zyp-blog",
-    "title": "Zyp Blog",
+    "name": "hux-blog",
+    "title": "Hux Blog",
     "version": "1.0.0",
-    "homepage": "http://silverbulletzyp.github.io.",
-    "author": "Zyp",
+    "homepage": "http://huxpro.github.io",
+    "author": "Hux",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/SilverBulletZyp/SilverBulletZyp.github.io.git"
+        "url": "https://github.com/Huxpro/huxpro.github.io"
     },
     "scripts": {
         "preview": "cd _site; python -m SimpleHTTPServer 8020",
