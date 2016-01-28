@@ -2,7 +2,7 @@
     "name": "Zyp-blog",
     "title": "Zyp Blog",
     "version": "1.0.0",
-    "homepage": "http://huxpro.github.io",
+    "homepage": "http://silverbulletzyp.github.io.",
     "author": "Zyp",
     "devDependencies": {
         "grunt": "~0.4.5",
