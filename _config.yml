@@ -12,11 +12,11 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
+weibo_username:     2504032693
+zhihu_username:     ye-wu-mian-77
+github_username:    SilverBulletZyp
+twitter_username:   SilverBulletZyp
+facebook_username:  100010914184728
 
 
 
@@ -74,20 +74,20 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 # Friends
 friends: [
-    {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
+    #{
+#        title: "Hux Blog",
+#        href: "http://huangxuan.me"
+#    },{
+#        title: "Foo",
+#        href: "#"
+#    },{
+#        title: "Bar",
+#        href: "#"
+#    },{
+#        title: "Example Friends",
+#        href: "#"
+#    },{
+#        title: "It helps SEO",
+#        href: "#"
+#    }
 ]
