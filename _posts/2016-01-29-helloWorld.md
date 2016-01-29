@@ -6,7 +6,7 @@ date:       2016-01-29 00:25:00
 author:     "Zyp"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - 梦想
+    - 生活
 ---
 
 ## For The Dream
