@@ -163,6 +163,7 @@ NSTextEffectAttributeName: NSTextEffectLetterpressStyle
 
 上面是添加属性的label，下面是未添加属性的label
 ![NSTextEffectAttributeName](http://img.blog.csdn.net/20151019214153975)
+
 ### **11.NSLinkAttributeName** 设置链接属性
 点击后调用浏览器打开指定URL地址
 
@@ -175,12 +176,14 @@ NSLinkAttributeName:[NSURL URLWithString:@"http://www.baidu.com"]
 ```objc
 NSBaselineOffsetAttributeName:@3
 ```
+
 ### **13.NSAttachmentAttributeName** 设置文本附件
 取值为NSTextAttachment对象,常用于文字图片混排
 
 ```objc
 NSAttachmentAttributeName:id
 ```
+
 ### **14.NSWritingDirectionAttributeName** 设置文字书写方向
 从左向右书写或者从右向左书写，取值：
 
@@ -199,7 +202,9 @@ NSWritingDirectionAttributeName:@[@(NSWritingDirectionRightToLeft|NSWritingDirec
 
 ![NSWritingDirectionAttributeName](http://img.blog.csdn.net/20151019221353739)
 
+
 ---
+
 ## **三.UIFont字体选择**
 创建并且返回一个指定字体类型和大小的字体对象，fontName指定字体集的名字和风格（例如宋体，楷书等这一类型的），fontsize设置字体的大小。
 
