@@ -74,6 +74,7 @@ NSVerticalGlyphFormAttributeName      // 设置文本段落排版格式
 
 我们常把需要的属性放在字典中添加给字符串，使用方法看范例代码
 下面我们看看这些属性都干了什么，常用的有：
+
 ### **1.NSFontAttributeName** 设置字体
 
 ```objc
