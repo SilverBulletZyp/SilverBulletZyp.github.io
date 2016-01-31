@@ -77,9 +77,10 @@ NSVerticalGlyphFormAttributeName      // 设置文本段落排版格式
 我们常把需要的属性放在字典中添加给字符串，使用方法看范例代码
 下面我们看看这些属性都干了什么，常用的有：
 
+---
 
-### **1.NSFontAttributeName** 
-* 设置字体
+### **1.设置字体** 
+* NSFontAttributeName
 
 ```objc
 NSFontAttributeName:[UIFont systemFontOfSize:(CGFloat)] // 字体大小
@@ -87,13 +88,12 @@ NSFontAttributeName:[UIFont fontWithName:(nonnull NSString *) size:(CGFloat)] //
 ```
 
 
+### **2.设置段落风格**
+* NSParagraphStyleAttributeName
 
-### **2.NSParagraphStyleAttributeName**
-* 设置段落风格
 
-
-### **3.NSForegroundColorAttributeName、NSBackgroundColorAttributeName**
-* 设置字体和背景颜色
+### **3.设置字体和背景颜色**
+* NSForegroundColorAttributeName、NSBackgroundColorAttributeName
 
 ```objc
 NSForegroundColorAttributeName:[UIColor redColor]
@@ -101,19 +101,17 @@ NSBackgroundColorAttributeName:[UIColor greenColor]
 ```
 
 
-
-### **4.NSKernAttributeName** 
-* 设置字符间距：正值间距加宽，负值间距变窄
+### **4.设置字符间距** 
+* NSKernAttributeName
+* 正值间距加宽，负值间距变窄
 
 ```objc
 NSKernAttributeName:@-1.0
 ```
 
 
-
-
-### **5.NSStrikethroughStyleAttributeName、NSUnderlineStyleAttributeName**
-* 添加删除线和下划线
+### **5.添加删除线和下划线**
+* NSStrikethroughStyleAttributeName、NSUnderlineStyleAttributeName
 
 ```objc
 NSStrikethroughStyleAttributeName:@(NSUnderlineStyleSingle)
@@ -123,9 +121,8 @@ NSUnderlineColorAttributeName:[UIColor redColor]
 ```
 
 
-
-### **6.NSStrokeColorAttributeName、NSStrokeWidthAttributeName** 
-* 设置文字描边颜色和宽度
+### **6.设置文字描边颜色和宽度** 
+* NSStrokeColorAttributeName、NSStrokeWidthAttributeName
 
 ```objc
 /** 单独设置颜色无效果，需和描边宽度同时设置 */
@@ -134,10 +131,9 @@ NSStrokeWidthAttributeName:@3
 ```
 
 
-
-### **7.NSShadowAttributeName**
-
-* 设置阴影：官方文档说明`NSShadowAttributeName`默认为空，需要一个`NSShadow`实例对象。
+### **7.设置阴影**
+* NSShadowAttributeName
+* 官方文档说明`NSShadowAttributeName`默认为空，需要一个`NSShadow`实例对象。
 
 ```objc
 NSShadow * shadow = [[NSShadow alloc]init];
@@ -154,9 +150,9 @@ NSShadowAttributeName:shadow
 
 
 
-
-### **8.NSVerticalGlyphFormAttributeName、NSObliquenessAttributeName、NSExpansionAttributeName**
-* 绘制文本、设置字体倾斜、设置文本横向拉伸压缩属性：对于`NSVerticalGlyphFormAttributeName`设置文本排版格式，0 表示横排文本。1 表示竖排文本。在 iOS 中，总是使用横排文本，0 以外的值都未定义。
+### **8.绘制文本、设置字体倾斜、设置文本横向拉伸压缩属性**
+* NSVerticalGlyphFormAttributeName、NSObliquenessAttributeName、NSExpansionAttributeName
+* 对于`NSVerticalGlyphFormAttributeName`设置文本排版格式，0 表示横排文本。1 表示竖排文本。在 iOS 中，总是使用横排文本，0 以外的值都未定义。
 
 ```objc
 NSVerticalGlyphFormAttributeName:@(0)
@@ -165,9 +161,9 @@ NSExpansionAttributeName:@1
 ```
 
 
-
-### **9.NSLigatureAttributeName** 
-* 设置连体属性：0 表示没有连体字符，1 表示使用默认的连体字符，2 表示使用所有连体符号，默认值为 1（iOS 不支持 2）
+### **9.设置连体属性** 
+* NSLigatureAttributeName
+* 0 表示没有连体字符，1 表示使用默认的连体字符，2 表示使用所有连体符号，默认值为 1（iOS 不支持 2）
 
 Zapfino字体下：
 
@@ -182,8 +178,9 @@ NSLigatureAttributeName:@1,
 
 
 
-### **10.NSTextEffectAttributeName** 
-* 设置文本特殊效果：取值为 NSString 对象，目前只有图版印刷效果可用
+### **10.设置文本特殊效果** 
+* NSTextEffectAttributeName
+* 取值为 NSString 对象，目前只有图版印刷效果可用
 
 ```objc
 NSTextEffectAttributeName: NSTextEffectLetterpressStyle
@@ -194,35 +191,36 @@ NSTextEffectAttributeName: NSTextEffectLetterpressStyle
 
 
 
-### **11.NSLinkAttributeName**
-* 设置链接属性：点击后调用浏览器打开指定URL地址
+### **11.设置链接属性**
+* NSLinkAttributeName
+* 点击后调用浏览器打开指定URL地址
 
 ```objc
 NSLinkAttributeName:[NSURL URLWithString:@"http://www.baidu.com"]
 ```
 
 
-
-### **12.NSBaselineOffsetAttributeName** 
-* 设置基线偏移量：正值上偏，负值下偏
+### **12.设置基线偏移量** 
+* NSBaselineOffsetAttributeName
+* 正值上偏，负值下偏
 
 ```objc
 NSBaselineOffsetAttributeName:@3
 ```
 
 
-
-### **13.NSAttachmentAttributeName** 
-* 设置文本附件，取值为NSTextAttachment对象,常用于文字图片混排
+### **13.设置文本附件**
+* NSAttachmentAttributeName
+* 取值为NSTextAttachment对象,常用于文字图片混排
 
 ```objc
 NSAttachmentAttributeName:id
 ```
 
 
-
-### **14.NSWritingDirectionAttributeName** 
-* 设置文字书写方向，从左向右书写或者从右向左书写，取值：
+### **14.设置文字书写方向** 
+* NSWritingDirectionAttributeName
+* 从左向右书写或者从右向左书写，取值：
 
 ```objc
 @[@(NSWritingDirectionLeftToRight | NSTextWritingDirectionEmbedding)]
@@ -242,7 +240,6 @@ NSWritingDirectionAttributeName:@[@(NSWritingDirectionRightToLeft|NSWritingDirec
 
 
 ---
-
 
 
 ## **三.UIFont字体选择**
