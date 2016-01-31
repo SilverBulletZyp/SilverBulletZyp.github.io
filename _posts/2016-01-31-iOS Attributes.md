@@ -81,6 +81,7 @@ NSVerticalGlyphFormAttributeName      // 设置文本段落排版格式
 
 ### **1.设置字体** 
 * NSFontAttributeName
+
 ```objc
 NSFontAttributeName:[UIFont systemFontOfSize:(CGFloat)] // 字体大小
 NSFontAttributeName:[UIFont fontWithName:(nonnull NSString *) size:(CGFloat)] // 字体名称，字体大小
@@ -93,6 +94,7 @@ NSFontAttributeName:[UIFont fontWithName:(nonnull NSString *) size:(CGFloat)] //
 
 ### **3.设置字体和背景颜色**
 * NSForegroundColorAttributeName、NSBackgroundColorAttributeName
+
 ```objc
 NSForegroundColorAttributeName:[UIColor redColor]
 NSBackgroundColorAttributeName:[UIColor greenColor]
@@ -102,6 +104,7 @@ NSBackgroundColorAttributeName:[UIColor greenColor]
 ### **4.设置字符间距** 
 * NSKernAttributeName
 * 正值间距加宽，负值间距变窄
+
 ```objc
 NSKernAttributeName:@-1.0
 ```
@@ -109,6 +112,7 @@ NSKernAttributeName:@-1.0
 
 ### **5.添加删除线和下划线**
 * NSStrikethroughStyleAttributeName、NSUnderlineStyleAttributeName
+
 ```objc
 NSStrikethroughStyleAttributeName:@(NSUnderlineStyleSingle)
 NSStrikethroughColorAttributeName:[UIColor redColor]
@@ -119,6 +123,7 @@ NSUnderlineColorAttributeName:[UIColor redColor]
 
 ### **6.设置文字描边颜色和宽度** 
 * NSStrokeColorAttributeName、NSStrokeWidthAttributeName
+
 ```objc
 /** 单独设置颜色无效果，需和描边宽度同时设置 */
 NSStrokeColorAttributeName:[UIColor redColor]
@@ -129,6 +134,7 @@ NSStrokeWidthAttributeName:@3
 ### **7.设置阴影**
 * NSShadowAttributeName
 * 官方文档说明`NSShadowAttributeName`默认为空，需要一个`NSShadow`实例对象。
+
 ```objc
 NSShadow * shadow = [[NSShadow alloc]init];
 shadow.shadowBlurRadius = 5; // 模糊度
@@ -160,6 +166,7 @@ NSExpansionAttributeName:@1
 * 0 表示没有连体字符，1 表示使用默认的连体字符，2 表示使用所有连体符号，默认值为 1（iOS 不支持 2）
 
 Zapfino字体下：
+
 ```objc
 NSLigatureAttributeName:@0,
 NSLigatureAttributeName:@1,
@@ -174,6 +181,7 @@ NSLigatureAttributeName:@1,
 ### **10.设置文本特殊效果** 
 * NSTextEffectAttributeName
 * 取值为 NSString 对象，目前只有图版印刷效果可用
+
 ```objc
 NSTextEffectAttributeName: NSTextEffectLetterpressStyle
 ```
@@ -186,6 +194,7 @@ NSTextEffectAttributeName: NSTextEffectLetterpressStyle
 ### **11.设置链接属性**
 * NSLinkAttributeName
 * 点击后调用浏览器打开指定URL地址
+
 ```objc
 NSLinkAttributeName:[NSURL URLWithString:@"http://www.baidu.com"]
 ```
@@ -194,6 +203,7 @@ NSLinkAttributeName:[NSURL URLWithString:@"http://www.baidu.com"]
 ### **12.设置基线偏移量** 
 * NSBaselineOffsetAttributeName
 * 正值上偏，负值下偏
+
 ```objc
 NSBaselineOffsetAttributeName:@3
 ```
@@ -202,6 +212,7 @@ NSBaselineOffsetAttributeName:@3
 ### **13.设置文本附件**
 * NSAttachmentAttributeName
 * 取值为NSTextAttachment对象,常用于文字图片混排
+
 ```objc
 NSAttachmentAttributeName:id
 ```
@@ -210,6 +221,7 @@ NSAttachmentAttributeName:id
 ### **14.设置文字书写方向** 
 * NSWritingDirectionAttributeName
 * 从左向右书写或者从右向左书写，取值：
+
 ```objc
 @[@(NSWritingDirectionLeftToRight | NSTextWritingDirectionEmbedding)]
 @[@(NSWritingDirectionLeftToRight | NSTextWritingDirectionOverride)]
