@@ -87,7 +87,7 @@ tags:
 
 > 思维导图
 
-<span><img src="/img/iOS-mindmode.jpg"></span>
+<span><img src="/img/iOS-mindmode.jpg" width="800" height="500"></span>
 
 ----
 
