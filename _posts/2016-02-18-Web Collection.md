@@ -88,14 +88,17 @@ tags:
 > 思维导图
 
 
-![mindmode](https://github.com/SilverBulletZyp/SilverBulletZyp.github.io/blob/master/img/iOS-mindmode.jpg)
+![mindmode](img/iOS-mindmode.jpg)
 
 
 
 
 
 ----
+
+
 ## **UI**
+
 * [UIBezierPath和CAShapeLayer画图 - Cocoachina](http://www.cocoachina.com/ios/20160214/15251.html)
 * [UIColor，CGColor，CIColor三者的区别和联系](http://www.cnblogs.com/smileEvday/archive/2012/06/05/UIColor_CIColor_CGColor.html)
 * [AutoLayout与Size Class - Cocoachina](http://www.cocoachina.com/ios/20141217/10669.html)
@@ -106,6 +109,7 @@ tags:
 
 
 ## **Foundation**
+
 * [OC字符串操作 - CSDN](http://blog.csdn.net/scy411082514/article/details/7708106)
 * [用OC代码判断字符编码格式 - 推酷](http://www.tuicool.com/articles/BFJ3MbQ)
 * [NSString各种用法总结 - 推酷](http://www.tuicool.com/articles/JfyqMj)
@@ -121,6 +125,7 @@ tags:
 
 
 ## **内存管理**
+
 * [weak修饰符 - 红黑联盟](http://book.2cto.com/201305/23869.html)
 
 
@@ -128,6 +133,7 @@ tags:
 
 
 ## **线程与队列**
+
 * [从NSOperation和调度队列开始 - Cocoachina](http://www.cocoachina.com/ios/20160201/15179.html)
 * [李明杰GCD - CSDN](http://blog.csdn.net/q199109106q/article/details/8566300)
 * [Run Loop](http://www.dreamingwish.com/article/ios-multithread-program-runloop-the.html)
@@ -137,6 +143,7 @@ tags:
 
 
 ## **网络**
+
 * [Socket传输汉字](http://www.2cto.com/kf/201504/388752.html)
 
 
@@ -144,6 +151,7 @@ tags:
 
 
 ## **Crash**
+
 * [Xcode控制台调试命令 - CSDN](http://blog.csdn.net/likendsl/article/details/7576549)
 * [Xcode的一些调试技巧 - oschina](http://my.oschina.net/sunqichao/blog/118024?fromerr=hlrTHjuo)
 * [符号化崩溃日志 - CSDN](http://blog.csdn.net/diyagoanyhacker/article/details/41247411)
@@ -153,6 +161,7 @@ tags:
 
 
 ## **git学习**
+
 * [git入门](http://www.open-open.com/lib/view/open1405048177091.html)
 * [git下载](http://git-scm.com/download/)
 * [git教程](http://git-scm.com/book/zh/v2)
@@ -162,6 +171,7 @@ tags:
 
 
 ## **其他**
+
 * [十分钟让你明白Objective-C的语法(和Java、C++的对比)](http://blog.csdn.net/totogo2010/article/details/7632384)
 * [常用的iOS第三方资源汇总 - Cocoachina](http://www.cocoachina.com/ios/20160121/14988.html)
 * [Xcode快捷键与插件 - Cocoachina](http://www.cocoachina.com/ios/20160205/15233.html)
