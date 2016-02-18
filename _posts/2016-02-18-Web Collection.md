@@ -88,7 +88,7 @@ tags:
 > 思维导图
 
 
-![mindmode](https://github.com/SilverBulletZyp/SilverBulletZyp.github.io/blob/master/img/iOS-mindmode%100.jpg)
+![mindmode](https://github.com/SilverBulletZyp/SilverBulletZyp.github.io/blob/master/img/iOS-mindmode%20.jpg)
 
 
 
