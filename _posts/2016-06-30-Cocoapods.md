@@ -185,8 +185,22 @@ Header search Paths
 Framework search Paths
 ```
 
+### 5.其他
+
 cocoapods帮助
 
 ```
 $ pod -h
+```
+
+cocoapods安装路径
+
+```
+~/.cocoapods
+```
+
+查看目录下文件大小
+
+```
+$ du -sh *
 ```
