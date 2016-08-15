@@ -1,11 +1,7 @@
 ---
-layout:     post
-title:      "cocoapods安装及使用教程"
-<!--subtitle:   "rvm、ruby、gem、cocoapods安装及使用命令"
-date:       2016-06-30
-author:     "Zyp"-->
+layout: post
+title: "cocoapods安装及使用教程"
 tags:[Tool]
-<!--    - 工具控-->
 ---
 
 
