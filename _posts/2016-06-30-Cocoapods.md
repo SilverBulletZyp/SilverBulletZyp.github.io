@@ -10,9 +10,9 @@ tags: [Tool]
 
 
 
-### 1.安装rvm
+## 1.安装rvm
 
-安装rvm
+###安装rvm
 
 ```
 $ curl -L get.rvm.io | bash -s stable
@@ -27,79 +27,79 @@ $ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g
 ```
 
 
-### 2.安装ruby
+## 2.安装ruby
 
 
-列出已知的ruby版本
+### 列出已知的ruby版本
 
 ```
 $ rvm list known
 ```
 
-安装指定的ruby版本
+### 安装指定的ruby版本
 
 ```
 $ rvm install 1.9.3
 ```
 
-使用指定ruby版本
+### 使用指定ruby版本
 
 ```
 $ rvm use 1.9.3
 ```
 
-将指定的ruby版本设为默认
+### 将指定的ruby版本设为默认
 
 ```
 $ rvm use 1.9.3 --default
 ```
 
-查询已安装的ruby版本列表
+### 查询已安装的ruby版本列表
 
 ```
 $ rvm list
 ```
 
-卸载指定的ruby版本
+### 卸载指定的ruby版本
 
 ```
 $ rvm remove 1.9.2
 ```
 
-### 3.安装cocoapods
+## 3.安装cocoapods
 
-查看当前ruby版本
+### 查看当前ruby版本
 
 ```
 $ ruby -v
 ```
 
-移除现有ruby默认源
+### 移除现有ruby默认源
 
 ```
 $ gem sources --remove https://rubygems.org/
 ```
 
 
-添加gem镜像源
+### 添加gem镜像源
 
 ```
 $ gem sources -add https://ruby.taobao.org/
 ```
 
-验证新源路径
+### 验证新源路径
 
 ```
 $ gem sources -l
 ```
 
-更新gem
+### 更新gem
 
 ```
 $ sudo gem update --system
 ```
 
-安装或升级cocoapods
+### 安装或升级cocoapods
 
 ```
 // 原命令为
@@ -110,21 +110,21 @@ $ sudo gem install -n /usr/local/bin cocoapods
 $ pod setup
 ```
 
-### 4.cocoapods使用
+## 4.cocoapods使用
 
-搜索第三方库
+### 搜索第三方库
 
 ```
 $ pod search XXX
 ```
 
-cd到指定文件夹目录后创建Podfile文件
+### cd到指定文件夹目录后创建Podfile文件
 
 ```
 $ touch Podfile
 ```
 
-使用vim编辑文件
+### 使用vim编辑文件
 
 ```
 $ vim Podfile
@@ -161,7 +161,7 @@ end
 ```
 
 
-安装pod导入第三方库
+### 安装pod导入第三方库
 
 ```
 $ pod install
@@ -182,21 +182,21 @@ Header search Paths
 Framework search Paths
 ```
 
-### 5.其他
+## 5.其他
 
-cocoapods帮助
+### cocoapods帮助
 
 ```
 $ pod -h
 ```
 
-cocoapods安装路径
+### cocoapods安装路径
 
 ```
 ~/.cocoapods
 ```
 
-查看目录下文件大小
+### 查看目录下文件大小
 
 ```
 $ du -sh *
