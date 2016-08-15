@@ -2,7 +2,7 @@
 layout: post
 title: iOS-富文本
 category: iOS
-<!--tags: [iOS]-->
+tags: [iOS]
 ---
 
 > 关于UI控件的富文本，学习了一部分整理下来
