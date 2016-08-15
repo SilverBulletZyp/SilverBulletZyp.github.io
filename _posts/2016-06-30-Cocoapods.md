@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cocoapods安装及使用教程
-category: [Tool]
+category: Category
 tags: [Tool]
 ---
 
