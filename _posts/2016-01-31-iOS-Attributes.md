@@ -1,6 +1,7 @@
 ---
 layout:     post
 title:      "iOS - 富文本"
+category: Category
 <!--subtitle:   "积累之路就此展开 -- "
 date:       2016-01-31
 author:     "Zyp"
