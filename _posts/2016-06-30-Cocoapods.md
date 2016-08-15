@@ -12,7 +12,7 @@ tags: [Tool]
 
 ## 1.安装rvm
 
-###安装rvm
+### 安装rvm
 
 ```
 $ curl -L get.rvm.io | bash -s stable
