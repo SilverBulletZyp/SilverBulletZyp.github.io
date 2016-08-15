@@ -1,13 +1,8 @@
 ---
-layout:     post
-title:      "iOS - 富文本"
+layout: post
+title: iOS-Attributes
 category: Category
-<!--subtitle:   "积累之路就此展开 -- "
-date:       2016-01-31
-author:     "Zyp"
-header-img: "img/post-bg-unix-linux.jpg"-->
 tags: [iOS]
-<!--    - iOS-->
 ---
 
 > 关于UI控件的富文本，学习了一部分整理下来
