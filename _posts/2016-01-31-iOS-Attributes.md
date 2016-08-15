@@ -1,8 +1,8 @@
 ---
 layout: post
 title: iOS-富文本
-category: Category
-tags: [iOS]
+category: iOS
+<!--tags: [iOS]-->
 ---
 
 > 关于UI控件的富文本，学习了一部分整理下来
