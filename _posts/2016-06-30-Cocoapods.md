@@ -202,3 +202,12 @@ $ pod -h
 $ du -sh *
 ```
 
+
+## 6.常用命令
+
+若网络条件较差，不更新资源库，则更新podfile时可使用：
+
+```
+pod install --verbose --no-repo-update
+pod update --verbose --no-repo-update
+```
