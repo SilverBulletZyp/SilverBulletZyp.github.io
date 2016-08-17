@@ -1,11 +1,12 @@
 ---
 layout: post
-title: iOS-富文本
+title: iOS Attributes文本属性解析
 category: Category
 tags: [iOS]
+
 ---
 
-> 关于UI控件的富文本，学习了一部分整理下来
+> 关于UI控件的Attributes文本属性，学习了一部分整理下来
 
 
 ## **一.示例部分**
