@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iOS 可执行文件冲突解决方案
-category: Category
+category: iOS
 tags: [iOS]
 
 ---
