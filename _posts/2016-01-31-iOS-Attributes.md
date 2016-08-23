@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iOS Attributes文本属性解析
-category: Category
+category: iOS
 tags: [iOS]
 
 ---
