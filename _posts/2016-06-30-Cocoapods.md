@@ -7,7 +7,7 @@ tags: [Tool]
 ---
 
 
-* 利用rvm管理ruby版本,使用ruby环境下的gem安装cocoapods
+> 利用rvm管理ruby版本,使用ruby环境下的gem安装cocoapods
 
 
 
