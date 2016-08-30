@@ -16,15 +16,15 @@ tags: [Tool]
 ### 安装rvm
 
 ```
-$ curl -L get.rvm.io | bash -s stable
-$ source ~/.bashrc
-$ source ~/.bash_profile
+curl -L get.rvm.io | bash -s stable
+source ~/.bashrc
+source ~/.bash_profile
 ```
 
 如果网速较慢，修改rvm的ruby安装源镜像路径
 
 ```
-$ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g' ~/.rvm/config/db
+sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g' ~/.rvm/config/db
 ```
 
 
@@ -34,37 +34,37 @@ $ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g
 ### 列出已知的ruby版本
 
 ```
-$ rvm list known
+rvm list known
 ```
 
 ### 安装指定的ruby版本
 
 ```
-$ rvm install 1.9.3
+rvm install 1.9.3
 ```
 
 ### 使用指定ruby版本
 
 ```
-$ rvm use 1.9.3
+rvm use 1.9.3
 ```
 
 ### 将指定的ruby版本设为默认
 
 ```
-$ rvm use 1.9.3 --default
+rvm use 1.9.3 --default
 ```
 
 ### 查询已安装的ruby版本列表
 
 ```
-$ rvm list
+rvm list
 ```
 
 ### 卸载指定的ruby版本
 
 ```
-$ rvm remove 1.9.2
+rvm remove 1.9.2
 ```
 
 ## 3.安装cocoapods
@@ -72,43 +72,43 @@ $ rvm remove 1.9.2
 ### 查看当前ruby版本
 
 ```
-$ ruby -v
+ruby -v
 ```
 
 ### 移除现有ruby默认源
 
 ```
-$ gem sources --remove https://rubygems.org/
+gem sources --remove https://rubygems.org/
 ```
 
 
 ### 添加gem镜像源
 
 ```
-$ gem sources -add https://ruby.taobao.org/
+gem sources -add https://ruby.taobao.org/
 ```
 
 ### 验证新源路径
 
 ```
-$ gem sources -l
+gem sources -l
 ```
 
 ### 更新gem
 
 ```
-$ sudo gem update --system
+sudo gem update --system
 ```
 
 ### 安装或升级cocoapods
 
 ```
 // 原命令为
-$ sudo gem install cocoapods
+sudo gem install cocoapods
 // OS X 系统升级后改为
-$ sudo gem install -n /usr/local/bin cocoapods
+sudo gem install -n /usr/local/bin cocoapods
 
-$ pod setup
+pod setup
 ```
 
 ## 4.cocoapods使用
@@ -116,19 +116,19 @@ $ pod setup
 ### 搜索第三方库
 
 ```
-$ pod search XXX
+pod search XXX
 ```
 
 ### cd到指定文件夹目录后创建Podfile文件
 
 ```
-$ touch Podfile
+touch Podfile
 ```
 
 ### 使用vim编辑文件
 
 ```
-$ vim Podfile
+vim Podfile
 ```
 
 编写文件内容
@@ -165,13 +165,13 @@ end
 ### 安装pod导入第三方库
 
 ```
-$ pod install
+pod install
 ```
 
 若只需更新则直接update
 
 ```
-$ pod update
+pod update
 ```
 
 若存在警告则打开工程，为每个target的，build setting里的四个地方，增加$(inherited)。 
@@ -183,12 +183,17 @@ Header search Paths
 Framework search Paths
 ```
 
+更新本地资源库
+```
+pod repo update 
+```
+
 ## 5.其他
 
 ### cocoapods帮助
 
 ```
-$ pod -h
+pod -h
 ```
 
 ### cocoapods安装路径
@@ -200,7 +205,7 @@ $ pod -h
 ### 查看目录下文件大小
 
 ```
-$ du -sh *
+du -sh *
 ```
 
 
