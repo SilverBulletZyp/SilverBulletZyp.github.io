@@ -66,7 +66,7 @@ http超文本传输协议采用明文传输，https则使用SSL加密传输协�
 
 例如
 
-```xml
+```html
 <key>NSAppTransportSecurity</key>
 <dict>
 	<key>NSExceptionDomains</key>
