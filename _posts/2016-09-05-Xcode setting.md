@@ -43,7 +43,7 @@ http超文本传输协议采用明文传输，https则使用SSL加密传输协�
 如果你的App没有受到这些原因的限制，还是更建议你增加HTTPS支持，而不是关闭限制。
 
 
-```
+```xml
 <key>NSAppTransportSecurity</key>
 <dict>
   <key>NSExceptionDomains</key>
@@ -66,22 +66,22 @@ http超文本传输协议采用明文传输，https则使用SSL加密传输协�
 
 例如
 
-```
+```XML
 <key>NSAppTransportSecurity</key>
 <dict>
     <key>NSExceptionDomains</key>
     <dict>
-        <key>qq.com</key>
-        <dict>
-            <key>NSIncludesSubdomains</key>
-            <true/>
-        </dict>
-        <key>sina.com.cn</key>
-        <dict>
-            <key>NSIncludesSubdomains</key>
-            <true/>
-        </dict>
-       </dict>
+		<key>qq.com</key>
+       	<dict>
+           	<key>NSIncludesSubdomains</key>
+          	 <true/>
+   	    </dict>
+     	  <key>sina.com.cn</key>
+     	  <dict>
+          <key>NSIncludesSubdomains</key>
+          <true/>
+       	</dict>
+	</dict>
 </dict>
 ```
 
