@@ -69,19 +69,19 @@ http超文本传输协议采用明文传输，https则使用SSL加密传输协�
 ```xml
 <key>NSAppTransportSecurity</key>
 <dict>
-  <key>NSExceptionDomains</key>
-  <dict>	
-    <key>qq.com</key>
-	<dict>
-	  <key>NSIncludesSubdomains</key>
-	  <true/>
-   	</dict>
-	<key>sina.com.cn</key>
-	<dict>
-	  <key>NSIncludesSubdomains</key>
-	  <true/>
+	<key>NSExceptionDomains</key>
+	<dict>	
+		<key>qq.com</key>
+		<dict>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+		</dict>
+		<key>sina.com.cn</key>
+		<dict>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+		</dict>
 	</dict>
-  </dict>
 </dict>
 ```
 
