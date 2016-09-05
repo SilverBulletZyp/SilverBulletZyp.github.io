@@ -14,7 +14,7 @@ tags: [iOS]
 
 * Provisioning Profile 目录位置
 
-```shell
+```bash
 /Users/XXX/Library/MobileDevice/Provisioning\ Profiles/
 ```
 
