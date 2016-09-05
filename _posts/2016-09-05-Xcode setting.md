@@ -14,7 +14,7 @@ tags: [iOS]
 
 * Provisioning Profile 目录位置
 
-```
+```shell
 /Users/XXX/Library/MobileDevice/Provisioning\ Profiles/
 ```
 
@@ -28,7 +28,7 @@ http超文本传输协议采用明文传输，https则使用SSL加密传输协�
 
 1.默认允许任意HTTP请求
 
-```
+```xml
 <key>NSAppTransportSecurity</key>
 <dict>
   <key>NSAllowsArbitraryLoads</key>
@@ -66,21 +66,21 @@ http超文本传输协议采用明文传输，https则使用SSL加密传输协�
 
 例如
 
-```XML
+```xml
 <key>NSAppTransportSecurity</key>
 <dict>
     <key>NSExceptionDomains</key>
-    <dict>
-		<key>qq.com</key>
-       	<dict>
-           	<key>NSIncludesSubdomains</key>
-          	 <true/>
+    <dict>	
+    	<key>qq.com</key>
+		<dict>
+			<key>NSIncludesSubdomains</key>
+			<true/>
    	    </dict>
-     	  <key>sina.com.cn</key>
-     	  <dict>
-          <key>NSIncludesSubdomains</key>
-          <true/>
-       	</dict>
+			<key>sina.com.cn</key>
+			<dict>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 ```
