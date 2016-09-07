@@ -24,6 +24,8 @@ tags: [Resource]
 
 * [稀土](https://github.com/xitu) 稀土团队，翻译掘金上优质的英文文章
 
+* [LeanCloud](https://github.com/leancloud) 移动应用的一站式云端服务LeanCloud团队
+
 * [Urban Apps](https://github.com/UrbanApps) 优秀的桌面及移动端app开源项目
 
 * [Facebook](https://github.com/facebook) Facebook公司开源项目
@@ -72,6 +74,9 @@ tags: [Resource]
 * [CloudCannon](https://github.com/CloudCannon) 面向网站设计师及其客户的简单CMS系统
 
 * [EasyDarwin](https://github.com/EasyDarwin) 一个基于Darwin Streaming Server扩展、维护的开源流媒体服务器解决方案
+
+
+
 
 
 
