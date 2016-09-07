@@ -18,6 +18,14 @@ tags: [iOS]
 /Users/XXX/Library/MobileDevice/Provisioning\ Profiles/
 ```
 
+* Xcode 插件路径
+
+```bash
+~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/
+```
+
+
+
 
 ## Plist文件配置
 
