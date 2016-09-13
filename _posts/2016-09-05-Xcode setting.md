@@ -98,3 +98,26 @@ http超文本传输协议采用明文传输，https则使用SSL加密传输协�
 服务器已支持TLS 1.2 SSL ，但iOS9上还是不行，还要进行链接里的适配操作。那是因为：ATS只信任知名CA颁发的证书，小公司所使用的 self signed certificate，还是会被ATS拦截。对此，建议使用链接中给出的NSExceptionDomains，并将你们公司的域名挂在下面。
 
 
+## 常用插件
+
+
+* [FuzzyAutocomplete](https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin) - Xcode自动补全插件
+
+* [KSImageNamed](https://github.com/ksuther/KSImageNamed-Xcode) - 图片补全实时显示插件
+
+* [FastStub](https://github.com/music4kid/FastStub-Xcode) - 方法名自动补全插件
+
+* [VVDocumenter](https://github.com/onevcat/VVDocumenter-Xcode) - 代码注释插件
+
+* [XAlign](https://github.com/qfish/XAlign) - 代码自动对齐插件
+
+
+
+
+
+
+
+
+
+
+
