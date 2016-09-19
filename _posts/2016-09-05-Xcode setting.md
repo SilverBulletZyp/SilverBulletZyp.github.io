@@ -24,7 +24,17 @@ tags: [iOS]
 ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/
 ```
 
+* Xcode 派生数据路径
 
+```
+/Users/XXX/Library/Developer/Xcode/DerivedData
+```
+
+* Xcode 编译归档路径
+
+```
+/Users/XXX/Library/Developer/Xcode/Archives
+```
 
 
 ## Plist文件配置

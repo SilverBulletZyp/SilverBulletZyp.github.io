@@ -22,6 +22,7 @@ dSYM 是保存16进制函数地址映射信息的中转文件，我们调试的s
 因此，对于每一个发布版本我们都很有必要保存对应的Archives文件。
 
 
+
 ## 常用操作
 
 * 输出UUID及所在平台 [关于平台-ARM重要概念](http://silverbulletzyp.github.io//ios/2016/08/17/iOS-executableFile-conflict.html)
@@ -31,7 +32,18 @@ dwarfdump --uuid xx.app/xx     // 查看xx.app的UUID
 dwarfdump --uuid xx.app.dSYM   // 查看xx.app.dSYM的UUID
 ```
 
+* 解析内存地址对应的错误日志
 
 ```
-dwarfdump --lookup 0x9d70 -arch armv7 xx.app.dSYM  使错误的日志能看懂，把相应的内存地址对应到正确的地方。
+dwarfdump --lookup 0x9d70 -arch armv7 xx.app.dSYM  // 打印可阅读的0x9d70地址对应的错误日志
+```
+
+## symbolicatecrash
+
+通过Xcode自带的perl脚本symbolicatecrash工具来符号化崩溃日志
+
+* Xcode 6.0之后的路径
+
+```
+/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/symbolicatecrash
 ```
