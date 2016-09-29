@@ -36,6 +36,8 @@ tags: [Resource]
 
 * [NetEase](https://github.com/NetEase) 网易开源项目
 
+* [蘑菇街](https://github.com/mogujie) 蘑菇街开源项目
+
 
 ## 工具资源
 
