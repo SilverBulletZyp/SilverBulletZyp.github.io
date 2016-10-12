@@ -6,7 +6,20 @@ tags: [swift]
 
 ---
 
-> swift demo 收集
+> swift 学习整理
+
+
+## Swift学习
+
+* [Swift 学习指引](http://www.swiftguide.cn/)
+
+* [Swift中国](http://swiftcn.io/)
+
+* [Swift官网](https://swift.org/)
+
+
+
+
 
 ## 项目
 
