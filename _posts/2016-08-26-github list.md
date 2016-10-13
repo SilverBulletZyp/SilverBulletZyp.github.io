@@ -24,6 +24,8 @@ tags: [Resource]
 
 * [Google](https://github.com/google) Google公司开源项目
 
+* [Cisco Systems](https://github.com/cisco) 思科公司开源项目
+
 * [稀土](https://github.com/xitu) 稀土团队，翻译掘金上优质的英文文章
 
 * [LeanCloud](https://github.com/leancloud) 移动应用的一站式云端服务LeanCloud团队
@@ -65,6 +67,8 @@ tags: [Resource]
 
 
 * [ReactiveCocoa](https://github.com/ReactiveCocoa) 一款著名的由Github开源的应用于iOS和OS X开发的新框架
+
+* [FFmpeg](https://github.com/FFmpeg) 一套著名的可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序
 
 * [Face++](https://github.com/FacePlusPlus) 人脸识别云计算平台
 
