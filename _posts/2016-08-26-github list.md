@@ -26,6 +26,10 @@ tags: [Resource]
 
 * [Cisco Systems](https://github.com/cisco) 思科公司开源项目
 
+* [Mozilla Mobile](https://github.com/mozilla-mobile) 火狐移动开源项目
+
+* [wordpress-mobile](https://github.com/wordpress-mobile) WordPress移动开源项目
+
 * [稀土](https://github.com/xitu) 稀土团队，翻译掘金上优质的英文文章
 
 * [LeanCloud](https://github.com/leancloud) 移动应用的一站式云端服务LeanCloud团队
