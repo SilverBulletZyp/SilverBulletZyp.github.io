@@ -45,6 +45,9 @@ tags: [Resource]
 * [蘑菇街](https://github.com/mogujie) 蘑菇街开源项目
 
 
+
+
+
 ## 博客文章
 
 * [Swifter Tips](https://github.com/swifter-tips) iOS开发者王巍整理的Swift tips
@@ -93,17 +96,22 @@ tags: [Resource]
 * [EasyDarwin](https://github.com/EasyDarwin) 一个基于Darwin Streaming Server扩展、维护的开源流媒体服务器解决方案
 
 
-
+* [OpenResty](https://github.com/openresty/) 通过扩展 NGINX 和 Lua 实现的可伸缩的 Web 平台开源项目
 
 
 
 ## 功能需求
+
+* [AppCoda](https://github.com/appcoda) 高质量的iOS开发demo汇总组织
 
 * [TTTAttributedLabel](https://github.com/TTTAttributedLabel) 一个被苹果开发者广泛使用的富文本开源库
 
 * [enormego](https://github.com/enormego) 是一个对移动端及网页端项目需求再封装的开源团队
 
 * [Hackers and Painters](https://github.com/hackers-painters) 将Web开发标准带到原生平台的Web开发技术
+
+
+
 
 
 
