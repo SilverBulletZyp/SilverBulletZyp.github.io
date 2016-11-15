@@ -42,9 +42,17 @@ tags: [Resource]
 
 * [NetEase](https://github.com/NetEase) 网易开源项目
 
+* [Alibaba](https://github.com/alibaba/) 阿里巴巴开源项目
+
+* [微信](https://github.com/weixin) 微信开源项目
+
+* [Taobao](https://github.com/taobao) 淘宝开源项目
+
 * [蘑菇街](https://github.com/mogujie) 蘑菇街开源项目
 
+* [豆瓣](https://github.com/douban) 豆瓣开源项目
 
+* [Huawei](https://github.com/Huawei-Hadoop) [Huawei Openlab](https://github.com/huawei-openlab) 华为开源项目
 
 
 
