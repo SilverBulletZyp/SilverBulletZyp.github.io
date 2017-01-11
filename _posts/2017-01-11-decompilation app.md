@@ -8,7 +8,7 @@ tags: [iOS]
 
 
 ## 使用class-dump解包出头文件
- 
+
 下载 [class-dump](http://stevenygard.com/projects/class-dump/)
 运行dmg后需将`class-dump`拷贝进入`/usr/bin`
 
@@ -44,7 +44,7 @@ class-dump -H file -o fileDir
 
 由于未开始研究逆向，因此只记录后续会使用到的工具以备用
 
-* homebrew 
+* homebrew
 
 * Hopper Disassembler — 反编译工具，根据可执行文件反编译出汇编码。
 
@@ -59,3 +59,7 @@ class-dump -H file -o fileDir
 * AppCrackr
 
 
+## 相关逆向文章参考
+
+[移动App入侵与逆向破解技术](http://dev.qq.com/topic/577e0acc896e9ebb6865f321)
+[破解Mac Paw](https://bestswifter.com/app-crack/)
