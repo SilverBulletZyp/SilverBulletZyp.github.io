@@ -22,7 +22,7 @@
     
     
     [self socketConnect];
-    [self sendMessage];
+//    [self sendMessage];
     
 }
 
