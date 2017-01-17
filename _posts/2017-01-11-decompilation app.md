@@ -66,3 +66,5 @@ class-dump -H file -o fileDir
 [破解Mac Paw](https://bestswifter.com/app-crack/)
 
 [免越狱版iOS抢红包插件](http://www.swiftyper.com/2016/12/26/wechat-redenvelop-tweak-for-non-jailbroken-iphone/)
+
+[APP逆向分析之钉钉抢红包插件的实现](https://yohunl.com/ding-ding-qiang-hong-bao-cha-jian-iospian/)
