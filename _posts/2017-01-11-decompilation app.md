@@ -62,4 +62,7 @@ class-dump -H file -o fileDir
 ## 相关逆向文章参考
 
 [移动App入侵与逆向破解技术](http://dev.qq.com/topic/577e0acc896e9ebb6865f321)
+
 [破解Mac Paw](https://bestswifter.com/app-crack/)
+
+[免越狱版iOS抢红包插件](http://www.swiftyper.com/2016/12/26/wechat-redenvelop-tweak-for-non-jailbroken-iphone/)
