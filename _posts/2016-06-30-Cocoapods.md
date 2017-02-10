@@ -217,3 +217,9 @@ du -sh *
 pod install --verbose --no-repo-update
 pod update --verbose --no-repo-update
 ```
+
+
+## 7.Cocoapods技巧
+
+
+* [解决CocoaPods慢的小技巧](http://www.cocoachina.com/ios/20170208/18645.html)
