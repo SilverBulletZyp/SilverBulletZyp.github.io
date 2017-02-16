@@ -44,6 +44,8 @@ tags: [Resource]
 
 * [Alibaba](https://github.com/alibaba/) 阿里巴巴开源项目
 
+* [Tencent](https://github.com/Tencent) 腾讯开源项目
+
 * [微信](https://github.com/weixin) 微信开源项目
 
 * [Taobao](https://github.com/taobao) 淘宝开源项目
