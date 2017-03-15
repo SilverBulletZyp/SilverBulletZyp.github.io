@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 解包app头文件
+title: 解包app
 category: iOS
 tags: [iOS]
 
@@ -57,6 +57,16 @@ class-dump -H file -o fileDir
 * gdb — 调试器，用lldb也行。通过brew install gdb命令安装。
 
 * AppCrackr
+
+
+## 解析OC源文件
+
+将文件解析为C++源码
+
+```
+clang -rewrite-objc XXX
+```
+
 
 
 ## 相关逆向文章参考
