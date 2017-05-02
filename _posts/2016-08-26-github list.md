@@ -56,7 +56,7 @@ tags: [Resource]
 
 * [Huawei](https://github.com/Huawei-Hadoop) [Huawei Openlab](https://github.com/huawei-openlab) 华为开源项目
 
-
+* [猿题库技术团队](https://github.com/yuantiku) 猿题库开源项目
 
 ## 博客文章
 
