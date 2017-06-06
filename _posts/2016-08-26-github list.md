@@ -28,6 +28,8 @@ tags: [Resource]
 
 * [Mozilla Mobile](https://github.com/mozilla-mobile) 火狐移动开源项目
 
+* [Uber Open Source](https://github.com/uber) Uber公司开源项目
+
 * [wordpress-mobile](https://github.com/wordpress-mobile) WordPress移动开源项目
 
 * [稀土](https://github.com/xitu) 稀土团队，翻译掘金上优质的英文文章
@@ -56,7 +58,7 @@ tags: [Resource]
 
 * [Huawei](https://github.com/Huawei-Hadoop) [Huawei Openlab](https://github.com/huawei-openlab) 华为开源项目
 
-
+* [猿题库技术团队](https://github.com/yuantiku) 猿题库开源项目
 
 ## 博客文章
 
