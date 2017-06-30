@@ -60,6 +60,8 @@ tags: [Resource]
 
 * [猿题库技术团队](https://github.com/yuantiku) 猿题库开源项目
 
+* [eleme](https://github.com/eleme) 饿了么开源项目
+
 ## 博客文章
 
 * [Swifter Tips](https://github.com/swifter-tips) iOS开发者王巍整理的Swift tips
