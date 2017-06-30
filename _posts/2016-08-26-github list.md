@@ -83,6 +83,7 @@ tags: [Resource]
 
 * [Curl](https://github.com/curl) 是一款利用URL语法在命令行方式下工作的开源文件传输工具
 
+* [shadowsocks](https://shadowsocks.org/) 非常好用的翻墙代理工具
 
 ## 技术分类
 
