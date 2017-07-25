@@ -62,6 +62,8 @@ tags: [Resource]
 
 * [eleme](https://github.com/eleme) 饿了么开源项目
 
+* [JW Player](https://github.com/jwplayer) JWPlayer视频项目
+
 ## 博客文章
 
 * [Swifter Tips](https://github.com/swifter-tips) iOS开发者王巍整理的Swift tips
