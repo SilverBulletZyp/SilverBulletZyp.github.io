@@ -155,7 +155,7 @@ pod 'AFNetworking', '~> 2.3.1'
 ```
 source 'https://github.com/CocoaPods/Specs.Git'
 platform :ios, '6.1'
-// 不同的target使用不同的第三方依赖配置 
+// 不同的target使用不同的第三方依赖配置
 target :TargetName1 do
     pod 'MKNetworkKit'
     pod 'MBProgressHUD'
@@ -177,10 +177,10 @@ pod install
 pod update
 ```
 
-若存在警告则打开工程，为每个target的，build setting里的四个地方，增加$(inherited)。 
+若存在警告则打开工程，为每个target的，build setting里的四个地方，增加$(inherited)。
 
 ```
-Other Link Flags 
+Other Link Flags
 Library search Paths
 Header search Paths
 Framework search Paths
@@ -188,7 +188,7 @@ Framework search Paths
 
 更新本地资源库
 ```
-pod repo update 
+pod repo update
 ```
 
 ## 三、常用命令及参考
@@ -219,6 +219,20 @@ pod update --verbose --no-repo-update
 ```
 
 * [解决CocoaPods慢的小技巧](http://www.cocoachina.com/ios/20170208/18645.html)
+
+* 注 - CocoaPods版本设置
+
+```objective-c
+pod 'AFNetworking'      //不显式指定依赖库版本，表示每次都获取最新版本  
+pod 'AFNetworking', '2.0'     //只使用2.0版本  
+pod 'AFNetworking', '> 2.0'     //使用高于2.0的版本  
+pod 'AFNetworking', '>= 2.0'     //使用大于或等于2.0的版本  
+pod 'AFNetworking', '< 2.0'     //使用小于2.0的版本  
+pod 'AFNetworking', '<= 2.0'     //使用小于或等于2.0的版本  
+pod 'AFNetworking', '~> 0.1.2'     //使用大于等于0.1.2但小于0.2的版本  
+pod 'AFNetworking', '~>0.1'     //使用大于等于0.1但小于1.0的版本  
+pod 'AFNetworking', '~>0'     //高于0的版本，写这个限制和什么都不写是一个效果，都表示使用最新版本
+```
 
 
 ## 四、建立自己的Podspec
@@ -285,8 +299,8 @@ end
 // “*” 表示匹配所有文件
 // “*.{h,m}” 表示匹配所有以.h和.m结尾的文件
 // “**” 表示匹配所有子目录
-```	
-	
+```
+
 * s.source 常见写法
 
 ```
@@ -312,7 +326,7 @@ $ pod spec lint XXX.podspec
 ```
  -> XXX
 ```
- 
+
 * 验证成功后
 
 ```
@@ -367,7 +381,7 @@ pod spec lint XXX.podspec --verbose
  -> LPPushService (1.0.0)
     - ERROR | [iOS] Encountered an unknown error (The 'Pods' target has transitive dependencies that include static binaries: (/private/var/folders/jz/b_m3k7ln47524cm__h3__mk00000gn/T/CocoaPods/Lint/Pods/BPushSDK/LibBPush/libBPush.a)) during validation.
 ```
-    
+
 > 上述错误是因为依赖库`（s.dependency）`包含了`.a`静态库造成的。虽然这并不影响`Pod`的使用，但是验证是无法通过的。可以通过`--use-libraries`来让验证通过。
 `pod spec lint XXX.podspec --verbose --use-libraries`
 这种情况下使用`--use-libraries`虽然不会出现错误`（error）`，但是有时候会带来一些警告`（waring）`，警告同样是无法通过验证的。这时可以用`--allow-warnings`来允许警告。
@@ -439,5 +453,3 @@ s.source = { :git => "https://github.com/SilverBulletZyp/XXX.git", :tag => s.ver
 ```
 pod 'XXX', :git => 'https://github.com/xiaofei86/LPPushService.git', :tag => 1.0.0
 ```
-
-
