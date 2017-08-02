@@ -88,6 +88,8 @@ tags: [Resource]
 
 * [shadowsocks](https://shadowsocks.org/) 非常好用的翻墙代理工具
 
+* [Leanote - open source alternative to Evernote](https://github.com/leanote)  开源的全端笔记编辑器
+
 ## 技术分类
 
 
