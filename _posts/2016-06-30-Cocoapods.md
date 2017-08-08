@@ -237,20 +237,216 @@ pod 'AFNetworking', '~>0'     //高于0的版本，写这个限制和什么都�
 
 ## 四、建立自己的Podspec
 
+
 * 流程
+* 1.创建并设置一个私有的Spec Repo。
+* 2.创建Pod的所需要的项目工程文件，并且有可访问的项目版本控制地址。
+* 3.创建Pod所对应的podspec文件。
+* 4.本地测试配置好的podspec文件是否可用。
+* 5.向私有的Spec Repo中提交podspec。
+* 6.在个人项目中的Podfile中增加刚刚制作的好的Pod并使用。
+* 7.更新维护podspec。
 
-创建`.podspec`，编辑`.podspec`的必要信息，提交到`Git`即可正常使用
+
+注：
+在这一系列的步骤中需要创建两个Git仓库，分别是第一步和第二步（第二步不一定非要是Git仓库，只要是可以获取到相关代码文件就可以，也可以是SVN的，也可以说zip包，区别就是在podspec中的source项填写的内容不同），并且第一步只是在初次创建私有podspec时才需要，之后在创建其他的只需要从第二步开始就可以。
 
 
-### 1.创建及配置
+### 1.创建`Spec Repo`流程
 
-* 创建
+
+* `Github`创建远程仓库`ZYP_HomeController`
+
+
+* 本地`Cocoapods`创建私有化`Spec Repo`
+
 
 ```
-$ pod spec create XXX
+~ cd ~/.cocoapods/repos
+➜  repos ls
+master
+➜  repos pod repo add ZYP_HomeController https://github.com/SilverBulletZyp/ZYP_HomeController.git
+Cloning spec repo `ZYP_HomeController` from `https://github.com/SilverBulletZyp/ZYP_HomeController.git`
+➜  repos ls
+ZYP_HomeController master
 ```
 
-* 配置
+
+* 查看创建好的仓库
+
+
+```
+➜  repos tree -L 2
+.
+├── ZYP_HomeController
+│   ├── LICENSE
+│   └── README.md
+└── master
+    ├── CocoaPods-version.yml
+    ├── README.md
+    └── Specs
+```
+
+
+### 2.创建pod项目工程文件
+
+
+
+* 进入本地项目目录创建`podTestLibrary`
+
+
+```
+➜  Desktop ls
+ZYP_HomeViewController
+➜  Desktop cd ZYP_HomeViewController
+➜  ZYP_HomeViewController ls
+ZYP_HomeViewController           ZYP_HomeViewController.xcodeproj
+➜  ZYP_HomeViewController pod lib create podTestLibrary
+Cloning `https://github.com/CocoaPods/pod-template.git` into `podTestLibrary`.
+Configuring podTestLibrary template.
+
+------------------------------
+```
+
+
+* 之后需要填写几个问题
+
+
+```
+What language do you want to use?? [ Swift / ObjC ]
+ > ObjC
+Would you like to include a demo application with your library? [ Yes / No ]
+ > Yes
+Which testing frameworks will you use? [ Specta / Kiwi / None ]
+ > Specta
+Would you like to do view based testing? [ Yes / No ]
+ > Yes
+What is your class prefix?
+ > ZYP
+```
+
+* 随后自动执行`pod install`并创建`pod`依赖(此处我省略了项目内文件内容的打印)
+
+
+```
+➜  ZYP_HomeViewController tree -L 2
+.
+├── ZYP_HomeViewController
+│   ├── ...
+├── ZYP_HomeViewController.xcodeproj
+│   ├── project.pbxproj
+│   ├── project.xcworkspace
+│   └── xcuserdata
+└── podTestLibrary
+    ├── Example
+    ├── LICENSE
+    ├── README.md
+    ├── _Pods.xcodeproj -> Example/Pods/Pods.xcodeproj
+    ├── podTestLibrary
+    └── podTestLibrary.podspec
+```
+
+
+
+### 3.完善项目文件
+
+
+* 我们可以查看项目目录下`podTestLibrary`内容
+
+
+```
+➜  ZYP_HomeViewController cd podTestLibrary
+➜  podTestLibrary git:(master) ✗ tree -L 2
+.
+├── Example
+│   ├── Podfile
+│   ├── Podfile.lock
+│   ├── Pods
+│   ├── Tests
+│   ├── podTestLibrary
+│   ├── podTestLibrary.xcodeproj
+│   └── podTestLibrary.xcworkspace
+├── LICENSE
+├── README.md
+├── _Pods.xcodeproj -> Example/Pods/Pods.xcodeproj
+├── podTestLibrary
+│   ├── Assets
+│   └── Classes
+└── podTestLibrary.podspec
+```
+
+此时能看到该项目已由非git仓库自动生成为git类型仓库，并有`commit`的`log`
+
+
+* 添加需要替换的文件
+
+
+```
+// 可以看到在这个目录下有个 ReplaceMe.m 的文件，将需要提交的class替换即可
+ZYP_HomeViewController/podTestLibrary/podTestLibrary/Classes
+```
+
+于是我替换了目录下文件后为:
+
+
+```
+➜  podTestLibrary git:(master) ✗ tree -A
+.
+├── Assets
+└── Classes
+    ├── ZYPBaseViewController.h
+    ├── ZYPBaseViewController.m
+    ├── ZYPNavigationController.h
+    ├── ZYPNavigationController.m
+    ├── ZYPViewController.h
+    └── ZYPViewController.m
+```
+
+
+此时远端还没有改仓库，我们在github上创建该仓库后推送至远端
+
+
+* 创建好仓库后，`pod`目录下git推送
+
+
+```
+➜  podTestLibrary git:(master) ✗ git add -A
+➜  podTestLibrary git:(master) ✗ git commit -m 'init pod'
+➜  podTestLibrary git:(master) git remote add origin https://github.com/SilverBulletZyp/ZYP_HomeViewController.git
+➜  podTestLibrary git:(master) git push origin master
+// 推送不上去时可以试试强制推送
+// git push -f origin master
+// git push -u origin master
+// 之后可以查看仓库状态
+➜  podTestLibrary git:(master) git remote -v
+origin	https://github.com/SilverBulletZyp/ZYP_HomeViewController.git (fetch)
+origin	https://github.com/SilverBulletZyp/ZYP_HomeViewController.git (push)
+```
+
+注：每当你向Pod中添加了新的文件或者以后更新了podspec的版本都需要重新执行一遍pod update命令。
+
+
+* 增加`tag`并推送(`podspec`文件中获取`Git`版本控制的项目)
+
+
+```
+➜  podTestLibrary git:(master) git tag 1.0.0
+➜  podTestLibrary git:(master) git push --tags
+```
+
+
+### 4.修改项目`podspec`文件
+
+
+* cd到根目录创建`.podspec`
+
+
+```
+➜  ZYP_HomeViewController pod spec create ZYP_HomeViewController
+```
+
+
+* 配置`.podspec`的必要信息
 
 ```
 Pod::Spec.new do |s|
@@ -313,12 +509,12 @@ s.source = { :git => "https://github.com/SilverBulletZyp/XXX.git", :tag => s.ver
 ```
 
 
-### 2.上传及验证
-
 * 验证`.podspec`
 
 ```
-$ pod spec lint XXX.podspec
+/*pod lib lint                    //不予许警告和错误
+pod lib lint --allow-warnings   //允许警告*/
+pod spec lint ZYP_HomeViewController.podspec --allow-warnings
 ```
 
 * 验证过程中
