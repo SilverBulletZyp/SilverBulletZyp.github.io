@@ -53,7 +53,7 @@ tags: [Resource]
 
 * [Taobao](https://github.com/taobao) 淘宝开源项目
 
-* [蘑菇街](https://github.com/mogujie) 蘑菇街开源项目
+* [蘑菇街](https://github.com/meili) 蘑菇街开源项目
 
 * [豆瓣](https://github.com/douban) 豆瓣开源项目
 
@@ -138,4 +138,3 @@ tags: [Resource]
 -------
 
 > 若有想一起分享完善这个清单的朋友请发邮件至807536782@qq.com，我将在不久将您作为贡献者并共享至Github中。
-

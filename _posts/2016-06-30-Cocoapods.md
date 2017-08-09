@@ -538,6 +538,43 @@ XXX.podspec passed validation.
 验证`.podspec`会先测试本地`.podspec`文件是否存在语法错误。测试成功再根据`.podspec`文件找到远端仓库对应的版本克隆到本地并进行配置。最后测试文件是否能够编译成功。
 
 
+
+### 5.`podspec`常见错误
+
+* 报错`ERROR | [iOS] unknown: Encountered an unknown error`
+
+```
+原因:
+1.XCode 8.0环境下，要求cocoapods 1.1.0
+2.XCode 8.0必须下载iPhone Simulator 9.3的模拟器
+解决方案:
+1.更新cocoapods的版本到1.1.0
+2.下载iPhone Simulator 9.3，直接去xcode 8.0的Preferences里找到Components菜单项，找到9.3的模拟器下载就行
+```
+
+由于下载速度很慢，我们可以单独导出url去尝试下载
+
+```
+// 终端输入，验证后会抓取Xcode操作 或 是直接使用console.app控制台查看
+sudo /Applications/Xcode.app/Contents/MacOS/Xcode
+// 之后Preferences->Components点击下载9.3版本，然后取消，即可看到打印地址
+DVTDownloadable: Download Cancelled. Downloadable: https://devimages.apple.com.edgekey.net/downloads/xcode/simulators/com.apple.pkg.iPhoneSimulatorSDK9_3-9.3.1.1460411551.dmg.
+```
+
+* 报错`ERROR | [iOS] The source_files pattern did not match any file.`
+
+
+```
+原因:
+podspec引用提交的内容还没有此类文件夹，
+解决方案:
+// 可以通过引用的最新的提交、 解决这一问题即更改podspec源
+s.source       = { :git => "https://github.com/SilverBulletZyp/ZYP_HomeViewController.git", :commit => "b001743fbfe55b523f9279d4ba87c02f3b001418" }
+s.source_files  = 'Classes/*.{h,m}'
+```
+
+
+
 * 上传至`Github`
 
 将包含配置好的`.podspec`的项目提交`Git`，并给这次提交打上`tag`，这时就可以在其他项目中使用 `CocoaPods`引入你配置好的`Pod`了。
