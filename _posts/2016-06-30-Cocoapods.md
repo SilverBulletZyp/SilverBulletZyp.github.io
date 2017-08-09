@@ -237,8 +237,94 @@ pod 'AFNetworking', '~>0'     //高于0的版本，写这个限制和什么都�
 
 ## 四、建立自己的Podspec
 
+### 1.Github上托管开源仓库
 
-* 流程
+* Github上创建仓库并clone进入本地目录
+
+```
+git clone https://github.com/SilverBulletZyp/ZYP_HomeViewController.git
+```
+
+* 完善好本地目录下的项目
+
+* 初始化本地项目的podspec
+
+
+```
+pod spec create ZYP_HomeViewController
+```
+
+* 填写tag
+
+
+```
+// 创建tag
+git tag '1.0.0'
+git push --tags // push不上去可先删除
+// 查看tag
+git tag
+//删除一个指定的tag，并上传一个空tag到远程tag
+git tag -d <tagname>
+git push origin :refs/tags/<tagname>
+```
+
+
+* 填写`.podspec`
+
+
+```ruby
+Pod::Spec.new do |s|
+  s.name         = "ZYP_HomeViewController"
+  s.version      = "1.0.2"
+  s.summary      = "ZYP_HomeViewController for Project Homepage."
+  s.description  = <<-DESC
+            a simple way to add Controllers and show in tableview
+                   DESC
+  s.homepage     = "https://github.com/SilverBulletZyp/ZYP_HomeViewController"
+  s.license      = "MIT"
+  s.author             = { "zyp" => "807536782@qq.com" }
+  s.platform     = :ios
+  s.source       = { :git => "https://github.com/SilverBulletZyp/ZYP_HomeViewController.git", :tag => "#{s.version}" }
+  s.source_files  = "ZYP_HomeViewController/Base/**/*.{h,m}"
+```
+
+* 验证是否可用
+
+
+```
+pod lib lint --allow-warnings // 验证是否可用(allow-warnings允许报错)
+pod lib lint --verbose // 查看详细错误信息
+// 若可用则
+ZYP_HomeViewController passed validation.
+```
+
+* 推送`podspec`文件至`CocoaPod`官方库
+
+
+```
+// 注册cocoapods账号(--verbose便于输出调试信息)
+pod trunk register <email> '<password>'  --verbose
+// 确认邮件后也可再次查看自己注册信息
+pod trunk me
+// 也可添加其他开发者
+pod trunk add-owner <email>
+// 推送到官方库(忽略警告)
+pod trunk push ZYP_HomeViewController.podspec  --allow-warnings
+```
+
+* 查看结果
+
+```
+🎉  Congrats
+
+🚀  ZYP_HomeViewController (1.0.2) successfully published
+📅  August 9th, 02:40
+🌎  https://cocoapods.org/pods/ZYP_HomeViewController
+👍  Tell your friends!
+```
+
+
+<!-- * 流程
 * 1.创建并设置一个私有的Spec Repo。
 * 2.创建Pod的所需要的项目工程文件，并且有可访问的项目版本控制地址。
 * 3.创建Pod所对应的podspec文件。
@@ -685,4 +771,4 @@ s.source = { :git => "https://github.com/SilverBulletZyp/XXX.git", :tag => s.ver
 
 ```
 pod 'XXX', :git => 'https://github.com/xiaofei86/LPPushService.git', :tag => 1.0.0
-```
+``` -->
