@@ -57,11 +57,15 @@ tags: [Resource]
 
 * [豆瓣](https://github.com/douban) 豆瓣开源项目
 
-* [Huawei](https://github.com/Huawei-Hadoop) [Huawei Openlab](https://github.com/huawei-openlab) 华为开源项目
+* [Huawei](https://github.com/Huawei-Hadoop)
+
+* [Huawei Openlab](https://github.com/huawei-openlab) 华为开源项目
 
 * [猿题库技术团队](https://github.com/yuantiku) 猿题库开源项目
 
 * [eleme](https://github.com/eleme) 饿了么开源项目
+
+* [伯乐在线](https://github.com/jobbole) 伯乐在线各类开源资源项目大全
 
 * [JW Player](https://github.com/jwplayer) JWPlayer视频项目
 
