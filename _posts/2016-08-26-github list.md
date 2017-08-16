@@ -51,6 +51,8 @@ tags: [Resource]
 
 * [微信](https://github.com/weixin) 微信开源项目
 
+* [Baidu EFE team](https://github.com/ecomfe) 百度EFE团队
+
 * [Taobao](https://github.com/taobao) 淘宝开源项目
 
 * [蘑菇街](https://github.com/meili) 蘑菇街开源项目
@@ -142,3 +144,5 @@ tags: [Resource]
 -------
 
 > 若有想一起分享完善这个清单的朋友请发邮件至807536782@qq.com，我将在不久将您作为贡献者并共享至Github中。
+
+
