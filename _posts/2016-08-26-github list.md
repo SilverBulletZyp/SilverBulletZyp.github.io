@@ -51,17 +51,23 @@ tags: [Resource]
 
 * [微信](https://github.com/weixin) 微信开源项目
 
+* [Baidu EFE team](https://github.com/ecomfe) 百度EFE团队
+
 * [Taobao](https://github.com/taobao) 淘宝开源项目
 
-* [蘑菇街](https://github.com/mogujie) 蘑菇街开源项目
+* [蘑菇街](https://github.com/meili) 蘑菇街开源项目
 
 * [豆瓣](https://github.com/douban) 豆瓣开源项目
 
-* [Huawei](https://github.com/Huawei-Hadoop) [Huawei Openlab](https://github.com/huawei-openlab) 华为开源项目
+* [Huawei](https://github.com/Huawei-Hadoop)
+
+* [Huawei Openlab](https://github.com/huawei-openlab) 华为开源项目
 
 * [猿题库技术团队](https://github.com/yuantiku) 猿题库开源项目
 
 * [eleme](https://github.com/eleme) 饿了么开源项目
+
+* [伯乐在线](https://github.com/jobbole) 伯乐在线各类开源资源项目大全
 
 * [JW Player](https://github.com/jwplayer) JWPlayer视频项目
 
@@ -138,4 +144,5 @@ tags: [Resource]
 -------
 
 > 若有想一起分享完善这个清单的朋友请发邮件至807536782@qq.com，我将在不久将您作为贡献者并共享至Github中。
+
 

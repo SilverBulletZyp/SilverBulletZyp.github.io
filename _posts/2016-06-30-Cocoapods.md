@@ -237,8 +237,94 @@ pod 'AFNetworking', '~>0'     //高于0的版本，写这个限制和什么都�
 
 ## 四、建立自己的Podspec
 
+### 1.Github上托管开源仓库
 
-* 流程
+* Github上创建仓库并clone进入本地目录
+
+```
+git clone https://github.com/SilverBulletZyp/ZYP_HomeViewController.git
+```
+
+* 完善好本地目录下的项目
+
+* 初始化本地项目的podspec
+
+
+```
+pod spec create ZYP_HomeViewController
+```
+
+* 填写tag
+
+
+```
+// 创建tag
+git tag '1.0.0'
+git push --tags // push不上去可先删除
+// 查看tag
+git tag
+//删除一个指定的tag，并上传一个空tag到远程tag
+git tag -d <tagname>
+git push origin :refs/tags/<tagname>
+```
+
+
+* 填写`.podspec`
+
+
+```ruby
+Pod::Spec.new do |s|
+  s.name         = "ZYP_HomeViewController"
+  s.version      = "1.0.2"
+  s.summary      = "ZYP_HomeViewController for Project Homepage."
+  s.description  = <<-DESC
+            a simple way to add Controllers and show in tableview
+                   DESC
+  s.homepage     = "https://github.com/SilverBulletZyp/ZYP_HomeViewController"
+  s.license      = "MIT"
+  s.author             = { "zyp" => "807536782@qq.com" }
+  s.platform     = :ios
+  s.source       = { :git => "https://github.com/SilverBulletZyp/ZYP_HomeViewController.git", :tag => "#{s.version}" }
+  s.source_files  = "ZYP_HomeViewController/Base/**/*.{h,m}"
+```
+
+* 验证是否可用
+
+
+```
+pod lib lint --allow-warnings // 验证是否可用(allow-warnings允许报错)
+pod lib lint --verbose // 查看详细错误信息
+// 若可用则
+ZYP_HomeViewController passed validation.
+```
+
+* 推送`podspec`文件至`CocoaPod`官方库
+
+
+```
+// 注册cocoapods账号(--verbose便于输出调试信息)
+pod trunk register <email> '<password>'  --verbose
+// 确认邮件后也可再次查看自己注册信息
+pod trunk me
+// 也可添加其他开发者
+pod trunk add-owner <email>
+// 推送到官方库(忽略警告)
+pod trunk push ZYP_HomeViewController.podspec  --allow-warnings
+```
+
+* 查看结果
+
+```
+🎉  Congrats
+
+🚀  ZYP_HomeViewController (1.0.2) successfully published
+📅  August 9th, 02:40
+🌎  https://cocoapods.org/pods/ZYP_HomeViewController
+👍  Tell your friends!
+```
+
+
+<!-- * 流程
 * 1.创建并设置一个私有的Spec Repo。
 * 2.创建Pod的所需要的项目工程文件，并且有可访问的项目版本控制地址。
 * 3.创建Pod所对应的podspec文件。
@@ -538,6 +624,43 @@ XXX.podspec passed validation.
 验证`.podspec`会先测试本地`.podspec`文件是否存在语法错误。测试成功再根据`.podspec`文件找到远端仓库对应的版本克隆到本地并进行配置。最后测试文件是否能够编译成功。
 
 
+
+### 5.`podspec`常见错误
+
+* 报错`ERROR | [iOS] unknown: Encountered an unknown error`
+
+```
+原因:
+1.XCode 8.0环境下，要求cocoapods 1.1.0
+2.XCode 8.0必须下载iPhone Simulator 9.3的模拟器
+解决方案:
+1.更新cocoapods的版本到1.1.0
+2.下载iPhone Simulator 9.3，直接去xcode 8.0的Preferences里找到Components菜单项，找到9.3的模拟器下载就行
+```
+
+由于下载速度很慢，我们可以单独导出url去尝试下载
+
+```
+// 终端输入，验证后会抓取Xcode操作 或 是直接使用console.app控制台查看
+sudo /Applications/Xcode.app/Contents/MacOS/Xcode
+// 之后Preferences->Components点击下载9.3版本，然后取消，即可看到打印地址
+DVTDownloadable: Download Cancelled. Downloadable: https://devimages.apple.com.edgekey.net/downloads/xcode/simulators/com.apple.pkg.iPhoneSimulatorSDK9_3-9.3.1.1460411551.dmg.
+```
+
+* 报错`ERROR | [iOS] The source_files pattern did not match any file.`
+
+
+```
+原因:
+podspec引用提交的内容还没有此类文件夹，
+解决方案:
+// 可以通过引用的最新的提交、 解决这一问题即更改podspec源
+s.source       = { :git => "https://github.com/SilverBulletZyp/ZYP_HomeViewController.git", :commit => "b001743fbfe55b523f9279d4ba87c02f3b001418" }
+s.source_files  = 'Classes/*.{h,m}'
+```
+
+
+
 * 上传至`Github`
 
 将包含配置好的`.podspec`的项目提交`Git`，并给这次提交打上`tag`，这时就可以在其他项目中使用 `CocoaPods`引入你配置好的`Pod`了。
@@ -648,4 +771,4 @@ s.source = { :git => "https://github.com/SilverBulletZyp/XXX.git", :tag => s.ver
 
 ```
 pod 'XXX', :git => 'https://github.com/xiaofei86/LPPushService.git', :tag => 1.0.0
-```
+``` -->
