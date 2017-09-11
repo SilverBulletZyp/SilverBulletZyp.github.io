@@ -107,6 +107,13 @@ http超文本传输协议采用明文传输，https则使用SSL加密传输协�
 
 服务器已支持TLS 1.2 SSL ，但iOS9上还是不行，还要进行链接里的适配操作。那是因为：ATS只信任知名CA颁发的证书，小公司所使用的 self signed certificate，还是会被ATS拦截。对此，建议使用链接中给出的NSExceptionDomains，并将你们公司的域名挂在下面。
 
+## Xcode快捷启动
+
+
+```
+open -a Xcode XXXX
+```
+
 
 ## 常用插件
 
